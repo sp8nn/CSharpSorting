@@ -1,0 +1,58 @@
+﻿namespace SortingWF
+{
+    partial class MainForm
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            displayPanel = new Panel();
+            SuspendLayout();
+            // 
+            // displayPanel
+            // 
+            displayPanel.Dock = DockStyle.Fill;
+            displayPanel.Location = new Point(0, 0);
+            displayPanel.Name = "displayPanel";
+            displayPanel.Size = new Size(800, 450);
+            displayPanel.TabIndex = 0;
+            displayPanel.Paint += this.displayPanel_Paint;
+            // 
+            // MainForm
+            // 
+            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(displayPanel);
+            Name = "MainForm";
+            Text = "Form1";
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        private Panel displayPanel;
+    }
+}
